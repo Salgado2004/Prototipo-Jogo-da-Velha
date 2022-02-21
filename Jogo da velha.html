@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meu Jogo da Velha</title>
+        <link rel="stylesheet" href="jogo_da_velha.css">
+        <script type="text/javascript" src="codigo.js"></script>
+        <link rel="icon" type="image/png" href="jogo da velha.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allison&family=Lobster&family=MedievalSharp&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="titulo">Jogo da Velha Online</h1>
+        <button class="btn" id ="jogar" onclick="Jogar()">Jogar</button>
+        <br>
+        <section>
+            <table id="tabuleiro">
+                <tr> <th colspan="3" id="vez">O jogo clássico agora em formato novo!</th></tr>
+                <tr id="C1">
+                    <td> <button class="buttom" id="c1l1" onclick="selecionar('c1l1')"> </button> </td>
+                    <td> <button class="buttom" id="c1l2" onclick="selecionar('c1l2')"> </button> </td>
+                    <td> <button class="buttom" id="c1l3" onclick="selecionar('c1l3')"> </button> </td>
+                </tr>
+                <tr id="C2">
+                    <td> <button class="buttom" id="c2l1" onclick="selecionar('c2l1')"> </button> </td>
+                    <td> <button class="buttom" id="c2l2" onclick="selecionar('c2l2')"> </button> </td>
+                    <td> <button class="buttom" id="c2l3" onclick="selecionar('c2l3')"> </button> </td>
+                </tr>
+                <tr id="C3">
+                    <td> <button class="buttom" id="c3l1" onclick="selecionar('c3l1')"> </button> </td>
+                    <td> <button class="buttom" id="c3l2" onclick="selecionar('c3l2')"> </button> </td>
+                    <td> <button class="buttom" id="c3l3" onclick="selecionar('c3l3')"> </button> </td>
+                </tr>
+            </table>
+        </section>
+
+        
+        <button class="btn" id="especial" onclick="NovoJogo()">Jogar novamente</button>
+        <nav>
+            <ul>
+                <li id="legenda"> Temas: </li>
+                <li> <button class="temas" id="classico" onclick="classico()">Clássico</button> </li>
+                <li> <button class="temas" id="neon" data-text="Neon" onclick="neon()">Neon</button> </li>
+                <li> <button class="temas" id="fresh" onclick="fresh()">Fresh</button> </li>
+            </ul>
+        </nav>
+
+    </body>
