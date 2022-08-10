@@ -2,6 +2,6 @@
 Projeto realizado para testar conhecimentos com css e javascript
 
 <video width="500" controls>
-  <source src="apresentacaoProjeto.mp4" type="video/mp4">
+  <source src="apresentacaoProjeto.mp4" type="video/mp4" alt="o readme não passa vídeos">
 </video>
 
